@@ -1,3 +1,5 @@
+--criacao de tabelas
+
 create table clientes (
     id_cliente integer primary key,
     nome text,
@@ -22,6 +24,8 @@ create table vendas (
     foreign key (id_cliente) references clientes(id_cliente),
     foreign key (id_produto) references produtos(id_produto)
 );
+
+--inserção de dados
 
 insert into clientes values
 (1, 'ana', 'são paulo', 'sp', '2023-01-10'),
